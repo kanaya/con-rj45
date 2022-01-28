@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -49,8 +49,8 @@
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
@@ -76,7 +76,7 @@ San Jose,&lt;br&gt;
 CA 95125 (408)494-0330&lt;br&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/autor&gt;</description>
 <packages>
-<package name="NELTRON-7810-XPXC-FOOTPRINT-NEEDS-EDIT">
+<package name="NELTRON-7810-XPXC-FOOTPRINT">
 <description>&lt;b&gt;Mod. Jack, Right Angle, 8 posiotion, 8 contatcs&lt;/b&gt; RJ45&lt;p&gt;</description>
 <wire x1="-8.532" y1="4.52" x2="8.532" y2="4.52" width="0" layer="20"/>
 <wire x1="8.25" y1="6.525" x2="8.25" y2="-3.302" width="0.2032" layer="22"/>
@@ -101,6 +101,16 @@ CA 95125 (408)494-0330&lt;br&gt;
 <text x="0" y="1" size="1" layer="27" align="center">&gt;VALUE</text>
 <hole x="-7.4" y="0" drill="2.4"/>
 <hole x="7.4" y="0" drill="2.4"/>
+<hole x="4.59" y="-4.84" drill="0.9"/>
+<hole x="-4.59" y="-2.3" drill="0.9"/>
+<circle x="-7.4" y="0" radius="1.8" width="0.15" layer="41"/>
+<circle x="7.4" y="0" radius="1.8" width="0.15" layer="41"/>
+<circle x="-4.59" y="-2.3" radius="1" width="0.15" layer="41"/>
+<circle x="4.59" y="-4.84" radius="1" width="0.15" layer="41"/>
+<circle x="-7.4" y="0" radius="1.8" width="0.15" layer="42"/>
+<circle x="7.4" y="0" radius="1.8" width="0.15" layer="42"/>
+<circle x="-4.59" y="-2.3" radius="1" width="0.15" layer="42"/>
+<circle x="4.59" y="-4.84" radius="1" width="0.15" layer="42"/>
 </package>
 <package name="LINKMAN-3008S-8810-FOOTPRINT">
 <description>&lt;b&gt;Mod. Jack, Right Angle, 8 posiotion, 8 contatcs&lt;/b&gt; RJ45&lt;p&gt;</description>
@@ -262,7 +272,7 @@ Source: GLX-S-88M.pdf</description>
 <gate name="G$1" symbol="JACK8SH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="NELTRON-7810-XPXC-FOOTPRINT-NEEDS-EDIT">
+<device name="" package="NELTRON-7810-XPXC-FOOTPRINT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
