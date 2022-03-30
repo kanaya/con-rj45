@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -101,16 +101,10 @@ CA 95125 (408)494-0330&lt;br&gt;
 <text x="0" y="1" size="1" layer="27" align="center">&gt;VALUE</text>
 <hole x="-7.4" y="0" drill="2.6"/>
 <hole x="7.4" y="0" drill="2.6"/>
-<hole x="4.59" y="-4.84" drill="0.9"/>
-<hole x="-4.59" y="-2.3" drill="0.9"/>
 <circle x="-7.4" y="0" radius="1.8" width="0.15" layer="41"/>
 <circle x="7.4" y="0" radius="1.8" width="0.15" layer="41"/>
-<circle x="-4.59" y="-2.3" radius="1" width="0.15" layer="41"/>
-<circle x="4.59" y="-4.84" radius="1" width="0.15" layer="41"/>
 <circle x="-7.4" y="0" radius="1.8" width="0.15" layer="42"/>
 <circle x="7.4" y="0" radius="1.8" width="0.15" layer="42"/>
-<circle x="-4.59" y="-2.3" radius="1" width="0.15" layer="42"/>
-<circle x="4.59" y="-4.84" radius="1" width="0.15" layer="42"/>
 </package>
 <package name="LINKMAN-3008S-8810-FOOTPRINT">
 <description>&lt;b&gt;Mod. Jack, Right Angle, 8 posiotion, 8 contatcs&lt;/b&gt; RJ45&lt;p&gt;</description>
